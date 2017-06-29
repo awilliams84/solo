@@ -12,8 +12,9 @@ from dronekit import connect, VehicleMode
 
 # Connect to the Vehicle.
 redleader='udpin:0.0.0.0:14550'
-print("Connecting to solo: %s" % (redleader,))
-vehicle = connect(redleader, wait_ready=True)
+solo=redleader
+print("Connecting to solo: %s" % (solo))
+vehicle = connect(solo, wait_ready=True)
 
 # Get some vehicle attributes (state)
 print "Get some vehicle attribute values:"
